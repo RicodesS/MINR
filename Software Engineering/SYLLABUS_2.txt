@@ -1,0 +1,49 @@
+SYLLABUS part 2  
+=================
+
+
+*** Service Orientation and Web Services ***
+
+SOA (Service Oriented Architecture), SOAP, WSDL, developing SOAP web services, RESTful web services, developing RESTful services, (very short) outline of UDDI
+
+- slides
+- M.P. Papazoglou. Web Services & SOA: Principles and Technology. Pearson-Prentice Hall. 2012
+
+Chapters 1--5
+An overview of chapter 6
+
+- C. Pautasso. RESTful Web Services: Principles, Patterns, Emerging Technologies. In Web Services Foundations (2014), pp 31-51, Springer 2014, DOI: 10.1007/978-1-4614-7518-7_2
+
+
+
+*** MOM - Message Oriented Middleware ***
+
+Short introduction to MOM. JMS - Java Message Service
+
+- slides (from colleagues)
+- Chapter 3 of G. Alonso, F. Casati, H. Kuno, V. Machiraju: Web Services. Concepts, Architectures and Applications (an extract is provided). It is suggested to read also the other chapters which are provided as courtesy 
+
+ 
+
+*** Agile methods and SCRUM ***
+
+- slides
+- E. Crookshanks (2015). Practical Enterprise Software Development Techniques. Tools and Techniques for Large Scale Solutions. APRESS, ISBN-13 (pbk): 978-1-4842-0621-8 ISBN-13 (electronic): 978-1-4842-0620-1 
+ 
+Chapter 4
+
+[suggested reading] S. Viscardi. The Professional ScrumMaster's Handbook. Packt Publishing Limited, 2013
+
+
+
+*** Enterprise software development techniques and tools ***
+
+a. Logging, unit testing, refactoring
+b. support for team development : building process, dependency management and versioning, SVN, GIT, Maven 
+
+- slides
+- E. Crookshanks (2015). Practical Enterprise Software Development Techniques. Tools and Techniques for Large Scale Solutions. APRESS, ISBN-13 (pbk): 978-1-4842-0621-8 ISBN-13 (electronic): 978-1-4842-0620-1 
+
+Chapter 1
+Chapters 5--9
+Appendix A

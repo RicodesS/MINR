@@ -1,0 +1,147 @@
+﻿##SOAP##
+
+Server
+
+New Project -> JavaWeb -> WebApplication -> Java EE Version 6
+index non necessario
+METRO -> si
+
+Per aggiungere servizi
+Progetto (tasto dx) New -> Web Services -> WebService
+Inserire nome e package
+
+Per aggiungere operazioni
+Navigare fino a Web Services (tasto dx) Add Operation
+Inserire Nome e tipo di ritorno
+Aggiungere parametri con nome e tipo di ritorno
+
+Per modificare il WSDL
+Non necessario se non per valori di ritorno particolari
+Web-INF -> wsdl -> Servizio_schema.xsd
+Modificare i campi xs:element dei xs:complexType
+Poi nel .java ai parametri di #WebService aggiungere wsdlLocation = "WEB-INF/wsdl/Servizio.wsdl"
+
+Quando il server parte, lascia una URL nell'output
+Appendere /Nome_Servizio per accedere al servizio
+Da li, si può accedere al WSDL
+
+Client
+
+New Project -> Java -> JavaApplication
+Sul client (tasto dx) New -> WebServiceClient
+Scegliere la voce WSDL URL
+Incollare la URL ricavata precedentemente
+Per implementare il client, drag and drop dei servizi nel .java, poi chiamarli con il main
+Situati in Client -> WebServiceReferences -> Servizio -> Operazione
+
+
+##REST##
+
+Server
+
+New Project -> JavaWeb -> WebApplication -> Java EE Version 6
+
+Per aggiungere servizi
+Progetto (tasto dx) New -> Web Services -> RESTful Web Services from Patterns -> Client-Controlled...
+Specificare nomi, package, container e MIME (tipo return)
+
+Non modificare ApplicationConfig
+OggettoResource è il singolo oggetto
+Implementa GET, PUT (update) e DELETE
+OggettosResource è la collezione
+Implementa GET, POST (new elem) e quasi mai DELETE (purga la collezione)
+
+Client
+
+New Project -> Java -> JavaApplication
+
+Aggiungere le librerie JAX-RS 2.0 e Jersey 2.5.1 da
+Client -> Libraries -> Add Library
+
+Per aggiungere client
+Progetto (tasto dx) New -> Restful Java Client
+Inserire nomee package
+Select Rest Resource, selezionare "From Project", browse nel server
+
+Modificare il main
+
+
+Se si usa un database
+
+I dati vengono acceduti attraverso query
+Usare la libreria sqlite-jdbc
+Alla creazione del database è necessario assegnare un path "jdbc:sqlite:/home/biar/RESTWS-database"
+Per le altre operazioni copiare e incollare dal creatore del database
+Nota sui prepared statement
+Inserimento dati - "insert into nomeTabella values (?, ?, ?);"
+Modifica dati -  "UPDATE professor SET name = ? , surname = ? WHERE id = ?"
+Cancellazione dati - "DELETE FROM professor WHERE id = ?"
+
+
+##JMS##
+Alla creazione di un subscriber in session.createSubscriber(destination, query, true) passare come query
+Param = "val" AND Param2 = "val2"
+Usualmente gli ID sono "Name"
+Implementare la logica dell' onMessage
+
+
+##Logging##
+private final static Logger LOGGER = Logger.getLogger(NOME);
+LOGGER.info(MESSAGGIO);
+
+
+##Hadoop##
+Demoni start-dfs.sh && start-yarn.sh
+Compilazione javac WordCount.java -cp $(hadoop classpath)
+Archiviazione jar cf WordCount.jar *.class
+Caricamento dell'input hadoop fs -put MidSummerNightsDream.txt /in.txt
+Esecuzione dell'applicativo yarn jar WordCount.jar WordCount /in.txt /out
+Visualizzazione output hadoop fs -cat /out/part-r-00000 | less
+Rimozione file hadoop fs -rm -r -f /out
+
+Per tipi personalizzati
+implementare l'interfaccia Writable
+implementare le funzioni readFields e write
+
+
+##C++##
+class e struct generano classi
+usare public: e private: per sezioni pubbliche o private
+accesso con classe::valore/funzione
+esiste il puntatore this
+ereditarietà attraverso nuovo:vecchio
+
+Classi Virtual
+se una funzione è virtual, allora la classe è virtual
+Simile agli abstract java
+se puramente virtuale, virtual func() = 0;
+Da implementare nei figli
+
+Costruttori
+metodi con stesso nome della classe e nessun ritorno
+
+Distruttori
+Come costruttori, con tilde prima
+
+Nota, se si mettono cose sulla stack, pulizia gratuita
+Se si usa new, bisogna usare delete
+
+Tipi reference tipo&
+strutture reference accedute con .
+come se fosse l'indirizzo
+
+Overloading operatori
+Usare "RITORNO operator SIMBOLO_OPERATORE (PARAM)"
+se il parametro è int e basta allora pre operazione (++i)
+
+Templates
+Come i generics in java
+usare <Tipo>
+
+Per lasciare che classi esterne accedano a campi privati usare
+Friend altraclasse
+
+Libreria Vector
+Utile, fa tutto
+usare vector<Tipo>
+presenta un iteratore a vector<Tipo>::iterator accessibile con .begin o .end
