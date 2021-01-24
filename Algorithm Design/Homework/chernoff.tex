@@ -1,0 +1,18 @@
+ \documentclass[10pt]{article}
+
+\usepackage{amsmath,amsthm,amsfonts}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{xcolor}
+\usepackage{ulem}
+
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+Chernoff bounds are based on the markov's inequality (it gives a bound on the expectation): for any $a > 0,$
+$$
+\Pr(X > a) \leq \frac{\E(X)}{a}.
+$$\\ the bounds' theorem follows: $
+    Let $X = \sum_{i=1}^n X_i$, where $X_i = 1$ with probability $p_i$ and $X_i = 0$ with probability $1-p_i$, and all $X_i$ are independent.
+    Let $\mu = \E(X) = \sum_{i=1}^n p_i.$ Then
+	\Pr(X > (1 + \delta)\mu) \leq  e^{-\frac{\delta^2}{2 + \delta} \mu}$ for all $\delta > 0$;
