@@ -1,0 +1,76 @@
+parameter (pair mutez address); # the participant's bid amount and address
+storage (pair 
+              (pair int address)  # the number of accepted bids made by participants and the contract owner’s address
+              (pair mutez address) # the current highest bidder's bid amount and address
+        ); 
+code { # (pair parameter storage) : []
+       # pair (pair @parameter mutez address) (pair @storage (pair int address) (pair mutez address)) : []
+
+       # make sure that the participant has contributed at the minimun price 2 tez
+       PUSH mutez 2000000;
+       AMOUNT; # get the amount bid that is transferred along with this contract call
+       IFCMPGE {} { PUSH string "You did not provide enough tez (minimum 2 tez)."; FAILWITH; };   
+
+       # check that the number of bidders has not been exceeded 10
+       UNPAIR; # pair mutez address : pair (pair int address) (pair mutez address) : []
+       SWAP; # pair (pair int address) (pair mutez address) : pair mutez address : []
+       DUP; # pair (pair int address) (pair mutez address) : pair (pair int address) (pair mutez address) : pair mutez address : []
+       CAR; # pair int address : pair (pair int address) (pair mutez address) : pair mutez address : []
+       CAR; # int : pair (pair int address) (pair mutez address) : pair mutez address : []
+       DIP { PUSH int 10; }; # int : int : pair (pair int address) (pair mutez address) : pair mutez address : []
+       IFCMPLT { # check if the participant's bid is higher than the current highest bid
+                 SWAP; # pair mutez address : pair (pair int address) (pair mutez address) : []
+                 DIP { DUP; }; # pair mutez address : pair (pair int address) (pair mutez address) : pair (pair int address) (pair mutez address) : []
+                 DUP; # pair mutez address : pair mutez address : pair (pair int address) (pair mutez address) : pair (pair int address) (pair mutez address) : []
+                 DIP { SWAP; }; # pair mutez address : pair (pair int address) (pair mutez address) : pair mutez address : pair (pair int address) (pair mutez address) : []
+                 DIP { CDR; }; # pair mutez address : pair mutez address : pair mutez address : pair (pair int address) (pair mutez address) : []
+                 CAR; # mutez : pair mutez address : pair mutez address : pair (pair int address) (pair mutez address) : []
+                 DIP { CAR; }; # mutez : mutez : pair mutez address : pair (pair int address) (pair mutez address) : []
+                 IFCMPGT { # If the participant' bid is higher than the current highest bid, the contract returns the previous bid to its owner and updates the store with the new current highest bid amount and the bidder’s address
+                           SWAP; # pair (pair int address) (pair mutez address) : pair mutez address : []
+                           UNPAIR; # pair int address : pair mutez address : pair mutez address : []
+                           SWAP; # pair mutez address : pair int address : pair mutez address : []
+                           UNPAIR; # mutez : address : pair int address : pair mutez address : []
+                           SWAP; # address : mutez : pair int address : pair mutez address : []
+                           CONTRACT unit; # convert the current highest bidder's address to a contract
+                           IF_SOME {} { FAILWITH; }; 
+                           # contract unit : mutez : pair int address : pair mutez address : []
+                           SWAP; # mutez : contract unit : pair int address : pair mutez address : []
+                           DUP; # mutez : mutez : contract unit : pair int address : pair mutez address : []
+                           PUSH mutez 0; # mutez : mutez : mutez : contract : pair int address : pair mutez address : []                    
+                           IFCMPLT {
+                                     # mutez : contract unit : pair int address : pair mutez address : []
+                                     UNIT; # match the contract type
+                                     # unit : mutez : contract unit : pair int address : pair mutez address : []
+                                     TRANSFER_TOKENS; # transfer the tokens to the current hishest bidder
+                                     # operation : pair int address : pair mutez address : []
+                                     PUSH int 1;  # int : operation : pair int address : pair mutez address : []
+                                     SWAP; # operation : int : pair int address : pair mutez address : []
+                                     DIP 2 { UNPAIR; }; # operation : int : int : address : pair mutez address : []
+                                     DIP { ADD; }; # operation : int : address : pair mutez address : []
+                                     DIP { PAIR; }; # operation : pair int address : pair mutez address : []
+                                     DIP { PAIR; }; # operation : pair (pair int address) (pair mutez address) : []
+                                     NIL operation; SWAP; CONS; PAIR; # pair (list operation) (pair (pair int address) (pair mutez address)) : []
+                                   }
+                                   {
+                                     # mutez : contract unit : pair int address : pair mutez address : []
+                                     DROP; # contract unit : pair int address : pair mutez address : []
+                                     DROP; # pair int address : pair mutez address : []
+                                     UNPAIR; # int : address : pair mutez address : []
+                                     PUSH int 1; # int : int : address : pair mutez address : []
+                                     ADD; # int : address : pair mutez address : []
+                                     PAIR; # pair int address : pair mutez address : []
+                                     PAIR; # pair (pair int address) (pair mutez address) : []
+                                     NIL operation; PAIR; #pair (list operation) (pair (pair int address) (pair mutez address)) : []
+                                     
+                                   }
+                         }
+                         { # If the participant' bid is lower than the current highest bid, the bid is not recorded.
+                           # pair mutez address : pair (pair int address) (pair mutez address) : []
+                           PUSH string "your bid is lower than or equal to the current highest bid."; FAILWITH;
+                           
+                         };
+               } 
+               { PUSH string "The auction is closed since the number of accepted bids exceeds 10."; FAILWITH;
+               };
+     };

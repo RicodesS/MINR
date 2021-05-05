@@ -1,0 +1,23 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Rational Agents}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Structure of Rational Agents}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Classes of agents}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Table-Driven \(the simplest\)}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Interpretative Reflex}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Model-Based Reflex}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Learning agents}{subsection.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Types of environments}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Solving Poblems by Searching}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Problem-solving agents}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Problem Formulation}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Problem Types}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Search strategies}{section.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Uninformed or blind searches}{subsection.3.4}% 15
+\BOOKMARK [1][-]{section.4}{Informed Search Methods}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Greedy Search}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Heuristics}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{A* and IDA*}{section.4}% 19
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Optimality of A*}{subsection.4.3}% 20
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Graph- vs. Tree-search}{subsection.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Variants of A*}{subsection.4.3}% 22
+\BOOKMARK [2][-]{subsection.4.4}{Local Search Methods}{section.4}% 23

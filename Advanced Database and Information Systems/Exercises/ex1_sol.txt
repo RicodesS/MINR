@@ -1,0 +1,7 @@
+a. /mondial/country[@area<"200000"][population>"10000000"]/name
+b. /mondial/country[@area</mondial/country[name="Netherlands"]/@area]/name
+c. /mondial/country[border[@country="D"]][population_growth> /mondial/country[name="Germany"]/population_growth]/name
+d. /mondial/country/city[@is_country_cap="yes"][located_at[@watertype]]/name
+e. /mondial/country/city[located_at[@watertype="lake"]]/name
+f. /mondial/country/city[@is_country_cap="yes"][located_at[@watertype="river"]]/located_at/@river
+g. /mondial/country[@car_code="D"]/*[count(child::*)<1]

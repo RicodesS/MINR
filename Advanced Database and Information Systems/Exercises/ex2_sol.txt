@@ -1,0 +1,6 @@
+a.
+b. //n/following-sibling::n.
+c.
+d. //n/n[child::n].
+e. (p/preceding::node()|p/ancestor::node()|p/descendant::node()|p/following::node())
+f. 

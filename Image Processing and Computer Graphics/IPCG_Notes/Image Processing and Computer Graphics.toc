@@ -1,0 +1,39 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction Computer Graphics}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Rendering aspects}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Light}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Ray Casting}{5}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Implicit surfaces}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Parametric surfaces}{6}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Combined objects}{6}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Triangles}{7}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Axis-aligned boxes}{7}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Axis-Aligned Bounding Box (AABB)}{7}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Bounding Volume Hierarchies (BVH)}{7}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Iso-surfaces in grids}{8}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Shading}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Phong Illumination Model}{8}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Diffuse Reflection}{9}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Specular Reflection}{9}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Reflection from Ambient Illumination}{9}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Extensions}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Shading Models}{10}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Well-knows Models}{10}{subsubsection.3.3.1}%
+\contentsline {section}{\numberline {4}Homogeneous Notation}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Transformations}{11}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Translation}{11}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Rotation}{11}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Mirroring}{12}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Scale}{12}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Shear}{12}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Planes and normals}{12}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Basis Transform}{12}{subsubsection.4.1.7}%
+\contentsline {section}{\numberline {5}Projection}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}2D projections}{13}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}3D projections}{14}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Projection Transform}{14}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Modelview Transformation}{14}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Projection Transformation}{15}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Perspective Projection Transformation}{15}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Orthographic Projection}{16}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Typical vertex transformations}{16}{section.7}%

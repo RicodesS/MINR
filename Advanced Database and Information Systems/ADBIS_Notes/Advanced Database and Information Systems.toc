@@ -1,0 +1,9 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Semi-structured Data models: XML, XPath, XRel}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}XML}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}XPath}{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}XRel: How to store XML data physically}{4}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}XQuery}{5}{subsection.1.4}%
+\contentsline {section}{\numberline {2}JSON and MONGODB}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}JSON (JavaScript Object Notation)}{6}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}MongoDB}{6}{subsection.2.2}%
