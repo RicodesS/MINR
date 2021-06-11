@@ -1,0 +1,13 @@
+<% if current_user.liked? comment %>
+	$('.like-btn').addClass('liked');
+<% else %>
+	$('.like-btn').addClass('like-btn');
+<%end%>
+$('.likes-count').html("<%=comment.get_upvotes.size %>")
+
+<% if current_user.disliked? comment %>
+	$('.dislike-btn').addClass('disliked');
+<% else %>
+	$('.dislike-btn').addClass('dislike-btn');
+<%end%>
+$('.dislikes-count').html("<%=comment.get_downvotes.size %>")

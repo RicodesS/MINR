@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @music_event.title %>
+</p>
+
+<%= link_to favorite_text, favorites_update_path(music_event_id: @music_event), id: 'favorite_link', remote: true %>
+
+<p>
+  <strong>Body:</strong>
+  <%= @music_event.body %>
+</p>
+<% if %>
+<%= link_to 'Edit', edit_music_event_path(@music_event) %> |
+<%= link_to 'Back', music_events_path %>
+<% end %>

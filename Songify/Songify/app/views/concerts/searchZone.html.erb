@@ -1,0 +1,32 @@
+<div class="container message" style="color: gray;">
+  <h3>Results</h3>
+  <h4>You searched for this events in zone: <%=@zone%></h4>
+  <br/>
+</div>
+
+<div class="list-group">
+    <% @bool = false %>
+    <% @results.each do |result| %>
+        <% if @zone.to_s=="Roma nord" %>
+            <% if result.venue.lat.to_f>=41.9109 %><% @bool = true %><% end %><%end%>
+        <% if @zone.to_s=="Roma sud" %>
+            <% if result.venue.lat.to_f<41.9109 %><% @bool = true %><% end %><%end%>
+        <% if @zone.to_s=="Roma ovest" %>
+            <% if result.venue.lng.to_f<=12.4818 %><% @bool = true %><% end %><%end%>
+        <% if @zone.to_s=="Roma est" %>
+            <% if result.venue.lng.to_f>12.4818 %><% @bool = true %><% end %><%end%>
+        <% if @bool == true%>
+        <a class="list-group-item clearfix" style="border-style: none; margin-bottom: 2%; width: 50%; left: 25%; border-radius: 6px; background-color: rgba(255,255,255,0.65);" href= <%= concert_path(result.id) %>>
+            <div>
+                <strong style="color: black"><%= result.display_name %></strong>
+                <br>
+                <br>
+                <span style="background-color: darksalmon;" class="badge badge-light"><%= result.type %></span>
+                <span class="pull-right" style="margin-top: -3%;">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </span>
+            </div>
+        </a>
+        <%end%>
+    <% end %>
+</div>

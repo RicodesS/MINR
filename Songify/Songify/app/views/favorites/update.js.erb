@@ -1,0 +1,1 @@
+$('#favorite_link').text("<%= favorite_text %>");

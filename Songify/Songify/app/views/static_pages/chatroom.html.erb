@@ -1,0 +1,47 @@
+<script>
+	$(document).ready(function(){
+
+		/* RECEIVE MESSAGE */
+		App.chat.received = function(data)
+		{
+			$('<li>' + data['message'] + '</li>').appendTo($('p'));
+		}
+
+		$("#send").click(function(){
+			msg =  $("#msg").val()
+
+			/* SEND MESSAGE */
+			if(msg) {  // il messagio non può essere vuoto
+				msg_tot ='<%= current_user.username %>' + ": " + msg  //cambiare con email una volta ottenuta da twitter
+				App.chat.send_msg(msg_tot)
+				msg = $("#msg").val(null)  // resetta il box del messagio
+			}
+		})
+	})
+</script>
+
+
+<div class="container message" style="color: gray;">
+  <h3>Welcome to our chat</h3>
+  <br/>
+</div>
+
+<div class="comments-container" style="margin-top: 0%;">
+	<div class="comment-main-level">
+		<!-- Contenedor del Comentario -->
+		<div class="comment-box">
+			<div class="comment-head" style="background-color: rgba(255,255,255,0.8);">
+				<h1 style="color: black;">Chatroom <a class="disable" style="color: #595959;">interact with other users</a></h1>
+			</div>
+			<div class = 'comment-content scrollbar' id="chat" style="background-color: rgba(255,255,255,0.65);">
+					<div class="container" style="margin-left: -40%; margin-top: -40%; overflow-y: scroll;">
+					  <p><!-- Message zone --></p>
+					</div>
+			</div>
+		</div>
+	</div>
+
+  <span id="chat"></span>
+  <textarea id="msg" placeholder="   Write something..." style="width:640px; height: 100px; background-color: rgba(255,255,255,0.8);"></textarea>
+  <button id="send" type="button" class="btn btn-block mybtn btn-primary tx-tfm" style="margin-top: -0.1%; margin-bottom: 8.5%; border-radius: 0px 0px 6px 6px;">Send Message</button>
+</div>

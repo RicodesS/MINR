@@ -1,0 +1,44 @@
+<h3 style="color: gray;"><strong><%= @event.type %></strong></h3>
+<% @event.performances.each do |performance| %>
+  <blockquote>
+      <p style="color: gray;">Artist: <strong><%= link_to performance.display_name %></strong></p>
+      <p style="color: gray;">Date: <strong><%= @event.start.to_formatted_s(:long) %></strong></p> <small><cite> <%= @event.venue.display_name %> - <%= @event.venue.metro_area.display_name %> <i class="glyphicon glyphicon-map-marker"></i></cite></small>
+  </blockquote>
+  <div class="row" style="margin-left: inherit; margin-top: 40px; margin-bottom: 40px">
+    <% @imgj = "https://images.sk-static.com/images/media/profile_images/artists/" + performance.artist.id.to_s + "/huge_avatar" %>
+    <img style="border-radius: 6px;" src = "<%= @imgj %>" alt="No image" />
+  </div>
+<% end %>
+<div style="margin-bottom: 5%">
+  <% if current_user.favorites != nil && current_user.favorites.split(' ').include?(@event.id.to_s) %>
+	  	<% if @event.type == "Concert"%>
+	      <h5 style="color: gray;"><strong><%= link_to "Unfavorite", user_removeFavorite_path(id: @event.id,user_id: current_user.id) %> this concert, share</strong></h5>
+	  	<%else%>
+	      <h5 style="color: gray;"><strong><%= link_to "Unavorite", user_removeFavorite_path(id: @event.id,user_id: current_user.id) %> this festival, share</strong></h5>
+	  	<% end %>
+
+  <%else%>
+
+	  <% if @event.type == "Concert"%>
+	      <h5 style="color: gray;"><strong>Put in yours <%= link_to "favorite", user_addFavorite_path(id: @event.id,user_id: current_user.id) %> and share this concert</strong></h5>
+	  <%else%>
+	      <h5 style="color: gray;"><strong>Put in yours <%= link_to "favorite", user_addFavorite_path(id: @event.id,user_id: current_user.id) %> and share this festival</strong></h5>
+	  <% end %>
+  <% end %>
+
+  <p class="btn-social btn-twitter">
+    <% @mes = "https://twitter.com/intent/tweet?url=" + @event.uri %>
+      <%= link_to @mes, class: "btn btn-primary" do %><i class="fa fa-twitter"></i> on Twitter
+    <% end %>
+  </p>
+  <div class="row" style="margin-left: inherit; margin-top: 5%; color: gray;">
+    <%= image_tag @location , alt: "Map", style: "border-radius: 6px 6px 6px 6px;" %>
+    <p style="margin-left: 20px;">
+      <strong><%= @venue.display_name %></strong><br/>
+      <%= @venue.street %><br/>
+      <%= @venue.zip %> - <%= @venue.metro_area.display_name %><br/><br/>
+      look the <%= link_to "link", @venue.website %> for more information on the local<br/>
+      <%= @venue.phone %><br/>
+    </p>
+  </div>
+</div>

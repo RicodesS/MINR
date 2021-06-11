@@ -1,0 +1,51 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/homepage" style="padding-right: 100px; color: darksalmon;">Songify</a>
+        <ul class="nav navbar-nav navbar-right" style="display: inline;">
+          <li><%= link_to "Concerts", concerts_path %></li>
+          <li><%= link_to "Artists", artists_path %></li>
+          <% if user_signed_in? %>
+            <li><%= link_to "Profile", user_path(current_user) %></li>
+            <li><%= link_to "Tweets", tweets_path %></li>
+            <li><%= link_to "Chat", chatroom_path %></li>
+            <% if current_user.admin || current_user.mod%>
+              <li><%= link_to "Administration", users_index_path %></li>
+              <%end%>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "Login", new_user_session_path %></li>
+          <% end %>
+        </ul>
+    </div>
+<!--
+    <%= form_tag concert_search_path(concert_id: 0), :method => 'get' do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search" %>
+    <% end %>
+-->
+
+    <div style="margin-left: -7%">
+      <h4><div>
+        <%= form_tag concert_search_path(concert_id: 0), :method => 'get' do %>
+          <div class="input-group">
+            <%= text_field_tag :search, params[:search], class: 'form-control', placeholder: "Search", style: "border-color: black" %>
+            <div class="input-group-btn">
+                <button class="btn btn-default" style="background-color: rgba(255,255,255,0.65); border: none;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+          </div>
+        <% end %>
+      <div/></h4>
+      <h4><div>
+        <%= form_tag concert_searchDate_path(concert_id: 0), :method => 'get' do %>
+            <div class="input-group">
+            <%= date_field_tag :date, params[:date], style: "padding: 7.2px 40px; border: none; border-radius: 3px 0px 0px 3px; color: gray; font-size: 16px" %>
+            <div class="input-group-btn">
+                <button class="btn btn-default" style="background-color: rgba(255,255,255,0.65); border: none;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              </div>
+          </div>
+        <% end %>
+      <div/></h4>
+    </div>
+  </div>
+</nav>

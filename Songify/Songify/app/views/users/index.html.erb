@@ -1,0 +1,77 @@
+<div class="container message">
+  <h3 style="color: gray;">Administers Songify's users</h3>
+  <p style="color: white;"><% @reps = Report.all %>
+      <% @reps.each do |report| %>
+          <% @us = User.find(report.user_id) %>
+          <% @u = User.find(report.ut.to_i) %>
+
+          <%= @us.username%> just reported
+          <% if report.verif == false%> the comment: <% @c = report.comment %><%= @c.body %> of <% end %>
+          <%=link_to @u.username, user_show_user_path(@u) %>
+          <% if report.verif == false%> <%= link_to "Remove comment", @c, method: :delete , data: { confirm: "You sure?" }, style: "color: white;" %>
+          <%end%>
+          <%= link_to 'Ban user', user_ban_path(@u), method: :put, data: { confirm: 'This user will be banned. Proceed?' } %>
+          <%= link_to 'Delete user', @u, method: :delete, data: { confirm: "This user will be deleted. Proceed?" } %>
+          <br>
+      <%end%>
+  </p>
+  <br/>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <% if current_user && (current_user.admin? || current_user.mod?) %>
+          <% @users = User.all %>
+          <% @users.each do |user| %>
+          <div class="timeline-panel">
+              <div class="timeline-heading">
+                  <!-- Show user name -->
+                  <% if user != current_user %>
+                  <div class="container blockquote-twitter-tweet card" style="background-color: rgba(255,255,255,0.65); width: 50%; margin-bottom: 2%; border-radius: 6px;">
+                      <div class="card-body" style="text-align: center;">
+                          <h4><%= link_to user.username , user_show_user_path(user), style: "font-size: 16px;" %>
+                          <div class="row stylerow" style="border-bottom: 1px solid #E5E5E5; width: 111%; margin-left: -5.5%;"></div>
+                      </div>
+                      <div class="timeline-body">
+                        <% if !user.admin? %>
+                          <div class="field" style="text-align: center;">
+                            <% if user.ban? %>
+                              <%= link_to 'Unban', user_ban_path(user), method: :put, data: { confirm: 'This user will be unbanned. Proceed?' }, style: "color: black;" %>
+                              <% else %>
+                                <%= link_to 'Ban', user_ban_path(user), method: :put, data: { confirm: 'This user will be banned. Proceed?' }, style: "color: black;" %>
+                              <% end %>
+                            <% end %>
+                            </div>
+
+                            <div class="field" style="text-align: center">
+                            <% if user.mod? %>
+                              <%= link_to 'Unmod', user_mod_path(user), method: :put, data: { confirm: 'This user will be unmoded. Proceed?' }, style: "color: black;" %>
+                              <% else %>
+                                <%= link_to 'Mod', user_mod_path(user), method: :put, data: { confirm: 'This user will be moded. Proceed?' }, style: "color: black;" %>
+                              <% end %>
+                            <% end %>
+                            </div>
+
+                        <% if current_user.admin? %>
+                          <div class="field" style="text-align: center">
+                            <% if user.admin? %>
+                              <% else %>
+                                <%= link_to 'Admin', user_admin_path(user), method: :put, data: { confirm: 'This user will be moded. Proceed?' }, style: "color: black;" %>
+                              <% end %>
+                            <% end %>
+                          </div>
+
+                        <% if (current_user.admin? || current_user.mod )&& !current_user?(user) && !user.admin%>
+                          <div class="field" style="text-align: center; margin-bottom: 2%;">
+                            <%= link_to "Delete", user, method: :delete, data: { confirm: "This user will be deleted. Proceed?" }, style: "color: black;" %>
+                          </div>
+                        <% else %>
+                      </div>
+                      <% end %>
+                  </div>
+                  <% end %>
+              </div>
+          </div>
+        <% end %>
+    </div>
+</div>

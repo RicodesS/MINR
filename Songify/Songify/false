@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20200316084054_add_bool_to_reports.rb

@@ -1,0 +1,66 @@
+<div class="container" style="margin-bottom: 8%; margin-top: 5%;">
+  <div class="row">
+		<div class="col-md-5 mx-auto">
+		  <div id="first">
+			  <div class="myform form" style="background-color: rgba(255,255,255,0.65);">
+				   <div class="logo mb-3">
+				      <div class="col-md-12 text-center">
+				         <h1>Login</h1>
+				      </div>
+				   </div>
+           <% provide(:title, 'Sign up') %>
+
+           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+               <div class="field" name="login">
+                 <%= f.label :email_address %><br />
+                 <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter email", style: "background-color: rgba(255,255,255,0.6);"  %>
+               </div>
+               <br/>
+               <div class="field">
+                 <%= f.label :password %><br />
+                 <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Enter Password", style: "background-color: rgba(255,255,255,0.6);"  %>
+               </div>
+               <br/>
+               <% if devise_mapping.rememberable? %>
+                 <div class="field">
+                   <%= f.check_box :remember_me %>
+                   <%= f.label :remember_me %>
+                 </div>
+               <% end %>
+               <br/>
+               <div class="form-group">
+                  <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+               </div>
+               <div class="col-md-12 text-center ">
+                  <button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+               </div>
+               <div class="col-md-12">
+                  <div class="login-or">
+                     <hr class="hr-or">
+                     <span class="span-or" style="background-color: rgba(255,255,255,0); color: black;">or</span>
+                  </div>
+               </div>
+               <%- if devise_mapping.omniauthable? %>
+                 <%- resource_class.omniauth_providers.each do |provider| %>
+                   <%= link_to " Signin using #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "google btn mybtn fa fa-twitter", style: "margin-left: 3.5%; width: 92.5%; height: 35px; background-color: rgba(207,207,207,0.6);" %><br />
+                   <br/>
+                 <% end %>
+               <% end %>
+               <div class="form-group">
+                  <p class="text-center">Don't have account?
+                    <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+                      <%= link_to "Sign up here", new_user_registration_path %><br />
+                    <% end %>
+                  </p>
+               </div>
+           <% end %>
+
+           <!--
+             <%= render "users/shared/links" %>
+           -->
+
+       </div>
+	  </div>
+	  </div>
+  </div>
+</div>

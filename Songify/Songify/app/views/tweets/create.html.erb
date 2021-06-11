@@ -1,0 +1,32 @@
+<div class="container message" style="color: gray;">
+  <h3>Results</h3>
+  <h4>You searched for this tweet</h4>
+  <br/>
+</div>
+<% provide(:title, 'Tweets') %>
+<div class="row">
+    <div class="col-lg-4">
+        <% @tweets.each do |tweet| %>
+            <div class="container blockquote-twitter-tweet card" style="background-color: rgba(255,255,255,0.65); width: 180%; left: 72%; margin-bottom: 7%; border-radius: 6px;">
+                <div class="card-body" style="text-align: center;">
+                    <div class="timeline-image">
+                        <!-- Show user avatar (profile pic)-->
+                        <img class="img-circle" src= '<%= image_path(tweet.user.profile_image_url_https.to_s.gsub('_normal','')) %>' alt="" style="width: 12%; height: 12%;">
+                    </div>
+                    <div class="timeline-panel">
+                        <div class="timeline-heading">
+                            <!-- Show user name -->
+                            <h4> <%= tweet.user.name %> </h4>
+                            <a href="https://twitter.com/<%= tweet.user.screen_name %>", target="_blank"> <%= "@#{tweet.user.screen_name}" %> </a>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="text-muted"> <%= tweet.text%> </p>
+                            <i class="fa fa-retweet"> <%= tweet.retweet_count %> </i>
+                            <i class="fa fa-heart"> <%= tweet.favorite_count %> </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

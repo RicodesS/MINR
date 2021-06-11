@@ -1,0 +1,7 @@
+ <div>
+    <h3 style="color: gray;"><% @reps = Report.all %>
+            <% @reps.each do |report| %>
+            <%= report.id %>
+            <%end%>
+    </h3>
+  </div>

@@ -1,0 +1,46 @@
+<div class="container message">
+  <% if current_user.email == nil %>
+    <p style="color: white;">Since you have logged in with twitter you have to <%= link_to "Update your e-mail", edit_user_registration_path %> to comment or review concerts. </p>
+    <br/>
+  <%end%>
+  <h3 style="color: gray;">Welcome to Songify's profile</h3>
+  <p style="color: gray;">show your informations <%= current_user.username%></p>
+  <br/>
+</div>
+
+<div class="container">
+    <div class="card cardpr" style="background-color: rgba(255,255,255,0.65); margin-bottom: 10%">
+        <div class="row stylerow" style="border-bottom: 1px solid #E5E5E5; width: 100%; margin-left: 0%;">
+            <div class="col-sm-2 col-md-2" style="margin-left: 4%;">
+                <% if current_user.provider == "twitter" %>
+                <img style="width: 90%; height: 55%; margin-top: 30%; color: black;" src="<%= current_user.profile_image_url %>" alt="No Image" class="img-raised rounded-circle img-fluid">
+                <%else%>
+                <img style="width: 90%; height: 55%; margin-top: 30%; color: black;" src="<%= current_user.avatar.url %>" alt="No Image" class="img-raised rounded-circle img-fluid">
+                <%end%>
+                <br/>
+            </div>
+            <div class="col-sm-4 col-md-4" style="color: black;">
+                <blockquote>
+                    <p><%= current_user.first_name%></p> <small><cite> <%= current_user.location%>, Italy <i class="glyphicon glyphicon-map-marker"></i></cite></small>
+                </blockquote>
+                <p> Email: <%= current_user.email %>
+                    <br/> Username: <%= current_user.username %>
+                    <br/> Date of birth: <%= current_user.date_of_birth %>
+                    <br/> User id:<% if current_user.provider != "twitter" %> <%= current_user.id %> <%else%> <%=current_user.uid%><%end%>
+                    <br/> Gender: <%= current_user.gender %>
+                    <br/> Bio: <%=current_user.bio %>
+                    <br/><br/> <%= link_to "Edit your account", edit_user_registration_path %>
+                </p>
+            </div>
+        </div>
+        <div style="margin-left: 4%; margin-bottom: 1%; margin-top: -2%">
+
+          <h4><% if current_user.favorites != nil && current_user.favorites.split(' ') != nil && current_user.favorites != ' ' %>
+                <%= link_to "Favorite music events" ,concert_index2_path(concert_id: current_user.favorites), style: "color: black;" %>
+            <% else %>
+                <%= link_to "Add some events to your favorites!" , concerts_path(concert_id: current_user.favorites), style: "color: black;" %>
+            <% end %>
+            </h4>
+        </div>
+    </div>
+</div>

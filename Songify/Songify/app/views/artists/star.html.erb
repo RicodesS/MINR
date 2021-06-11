@@ -1,0 +1,36 @@
+<div class="container message" style="color: gray;">
+  <h3>Results</h3>
+  <h4>You searched for this stars</h4>
+  <br/>
+  <h4><div>
+    <%= form_tag artists_star_path, local: true do %>
+      <div class="input-group">
+        <%= number_field_tag :stars, params[:stars], in: 0..5, class: 'form-control', placeholder: "Search", style: "left: 24.5%; width: 48.5%; border-color: black" %>
+        <div class="input-group-btn">
+            <button class="btn btn-default" style="left: -290px; background-color: rgba(255,255,255,0.65); border: none;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+      </div>
+    <% end %>
+  <div/></h4>
+  <br/>
+</div>
+
+<div class="list-group">
+    <% @topArtists.each do |artist| %>
+        <% if ArtistsController.get_avg(artist['name']).to_f >= @star.to_f && ArtistsController.get_avg(artist['name']) < @star.to_f+1.0 %>
+        <a class="list-group-item clearfix" style="border-style: none; margin-bottom: 2%; width: 50%; left: 25%; border-radius: 6px; background-color: rgba(255,255,255,0.65);" href= <%= artist_path(artist['name'])%>>
+            <div>
+                <strong style="color: black;"><%= artist['name'] %></strong>
+                <br>
+                <br>
+                <span style="background-color: darksalmon;" class="badge badge-light">
+                  <%= @avg = ArtistsController.get_avg(artist['name']) %> <i class="fa fa-star"></i>
+                </span>
+                <span class="pull-right" style="margin-top: -3%;">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </span>
+            </div>
+        </a>
+        <% end %>
+    <% end %>
+</div>

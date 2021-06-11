@@ -1,0 +1,101 @@
+<% provide(:title, 'Edit User') %>
+
+<div class="container" style="margin-bottom: 8%; margin-top: 5%;">
+  <div class="row">
+		<div class="col-md-5 mx-auto">
+		  <div id="first">
+			  <div class="myform form" style="background-color: rgba(255,255,255,0.65);">
+				   <div class="logo mb-3">
+				      <div class="col-md-12 text-center">
+				         <h1>Edit <%= resource_name.to_s.humanize %></h1>
+				      </div>
+				   </div>
+           <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, multipart: true }) do |f| %>
+             <%= render "devise/shared/error_messages", resource: resource %>
+
+             <div class="field">
+               <% if current_user.avatar.url.present? %>
+                 <%= image_tag(current_user.avatar.url, size: "400x400") %><br/>
+                 <%= f.label :Remove_Avatar %>
+                 <%= f.check_box :remove_avatar %> <br/>
+               <% end %>
+               <%= f.label :Add_Avatar %>
+               <%= f.file_field :avatar %>
+               <%= f.hidden_field :avatar_cache %>
+             </div>
+             <br/>
+
+             <div class="field">
+               <%= f.label :username %><br />
+               <%= f.text_field :username, autofocus: true, autocomplete: "username", class: "form-control", placeholder: "Enter username", style: "background-color: rgba(255,255,255,0.6);" %>
+             </div>
+             <br/>
+             <div class="field">
+               <%= f.label :email %><br />
+               <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Enter email", style: "background-color: rgba(255,255,255,0.6);" %>
+             </div>
+
+             <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+               <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+             <% end %>
+             <br/>
+             <% if current_user.provider != "twitter" %>
+             <div class="field">
+               <%= f.label :new_password %><br/>
+               <% if @minimum_password_length %>
+                 <em> (<%= @minimum_password_length %> characters minimum)</em>
+               <% end %>
+               <br/>
+               <%= f.password_field :password, autocomplete: "new-password" , class: "form-control", placeholder: "Enter new password", style: "background-color: rgba(255,255,255,0.6);" %>
+             </div>
+             <br/>
+             <div class="field">
+               <%= f.label :password_confirmation %><br />
+               <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm password", style: "background-color: rgba(255,255,255,0.6);" %>
+             </div>
+             <br/>
+             <div class="field">
+               <%= f.label :current_password %> <br/><i>(we need your current password to confirm your changes)</i><br />
+               <%= f.password_field :current_password, autocomplete: "current-password", class: "form-control", placeholder: "Enter current password", style: "background-color: rgba(255,255,255,0.6);" %>
+             </div>
+             <%else%>
+             <div>
+               <%= f.hidden_field :current_password, autocomplete: "current-password", value:123456%>
+             </div>
+             <%end%>
+               <div class="field">
+               <%= f.label :Birthday %><br />
+               <%= f.date_select :date_of_birth, order:[:day,:month,:year], start_year: 1900, end_year: Time.now.year, placeholder:current_user.date_of_birth %>
+             </div>
+             <div class="field">
+                 <%= f.label :Gender %><br />
+                 <%= f.radio_button :gender, 'male' %> male
+                 <%= f.radio_button :gender, 'female' %> female
+                 <%= f.radio_button :gender, 'other' %> other
+                 <%= f.radio_button :gender, 'undisclosed' %> undisclosed
+             </div>
+             <div class="field">
+                 <%= f.label :Location %><br/>
+                 <%= f.text_field :location, placeholder: "Enter your city", class: "form-control", style: "background-color: rgba(255,255,255,0.6);"  %>
+             </div>
+             <div class="field">
+                 <%= f.label :Bio %><br/>
+                 <%= f.text_area :bio, style: "width: 100%; background-color: rgba(255,255,255,0.6);", placeholder: current_user.bio %>
+             </div>
+             <br/>
+             <div class="actions">
+                 <%= f.submit "Update", class: "btn btn-block mybtn btn-primary tx-tfm" %>
+             </div>
+             <% end %>
+
+             <div style="margin-top: 10%">Are you unhappy?
+               <%= link_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %>
+             </div>
+
+             <%= link_to "Back", :back, class: "text-right" %>
+       </div>
+	    </div>
+	  </div>
+  </div>
+
+</div>

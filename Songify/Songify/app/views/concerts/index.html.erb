@@ -1,0 +1,50 @@
+<!--
+<div class="container message" style="color: gray;" >
+    <h4 ><%= form_tag concert_search_path(concert_id: current_user), :method => 'get' do %>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "Search" %>
+    <% end %>
+    </h4>
+  </div>
+
+<div class="container message" style="color: gray;" >
+    <h4 ><%= form_tag concert_searchDate_path(concert_id: current_user), :method => 'get' do %>
+      <%= date_field_tag :date, params[:date] %>
+      <%= submit_tag "Search date" %>
+    <% end %>
+    </h4>
+</div>
+-->
+<div class="container message" style="color: gray;">
+  <h3>Upcoming Concerts</h3>
+  <p>choose your favorite or discover according to the area</p>
+  <br/>
+  <h4><div>
+    <%= form_tag concert_searchZone_path(concert_id: current_user), :method => 'get' do %>
+      <div class="input-group">
+        <%= select_tag "zone", raw("<option>Roma nord</option><option>Roma ovest</option><option>Roma est</option><option>Roma sud</option>"), class: 'form-control', style: "color: gray; left: 24.5%; width: 48.5%; height: 20%; border-color: black" %>
+        <div class="input-group-btn">
+            <button class="btn btn-default" style="left: -290px; background-color: rgba(255,255,255,0.65); border: none;" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+      </div>
+    <% end %>
+  <div/></h4>
+  <br/>
+</div>
+
+<div class="list-group">
+    <% @results.each do |result| %>
+        <a class="list-group-item clearfix" style="border-style: none; margin-bottom: 2%; width: 50%; left: 25%; border-radius: 6px; background-color: rgba(255,255,255,0.65);" href= <%= concert_path(result.id) %>>
+            <div>
+                <strong style="color: black"><%= result.display_name %></strong>
+                <br>
+                <%= @xx %>
+                <br>
+                <span style="background-color: darksalmon;" class="badge badge-light"><%= result.type %></span>
+                <span class="pull-right" style="margin-top: -3%;">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                </span>
+            </div>
+        </a>
+    <% end %>
+</div>
