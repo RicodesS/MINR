@@ -1,0 +1,90 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Money}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Payment Systems}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Monetary unit}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Monetary equivalent}{section.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Fiat Money}{subsection.2.3}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Monetary Control Structures}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Creation by Banks}{subsection.2.4}% 8
+\BOOKMARK [2][-]{subsection.2.5}{Money representations}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.6}{Transaction processing}{section.2}% 10
+\BOOKMARK [1][-]{section.3}{Basic Tools}{}% 11
+\BOOKMARK [2][-]{subsection.3.1}{Blockchain}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Cryptographic Hash Functions}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Find a collision}{subsection.3.2}% 14
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Hash from Compression}{subsection.3.2}% 15
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Properties and Applications}{subsection.3.2}% 16
+\BOOKMARK [1][-]{section.4}{Hash Data-Structures}{}% 17
+\BOOKMARK [2][-]{subsection.4.1}{Hash Pointers}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.2}{Hashed Linked List/ Blockchain}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.3}{Merkle Tree}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Cryptography and Digital Signatures}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Public key cryptography}{section.5}% 22
+\BOOKMARK [3][-]{subsubsection.5.1.1}{RSA}{subsection.5.1}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Digital Signatures}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.3}{Identities}{section.5}% 25
+\BOOKMARK [1][-]{section.6}{Two Simple CryptoCurrencies}{}% 26
+\BOOKMARK [2][-]{subsection.6.1}{Goofycoin}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.2}{Scroogecoin}{section.6}% 28
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Transactions}{subsection.6.2}% 29
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Properties}{subsection.6.2}% 30
+\BOOKMARK [1][-]{section.7}{Decentralization}{}% 31
+\BOOKMARK [2][-]{subsection.7.1}{Distributed Consensus}{section.7}% 32
+\BOOKMARK [2][-]{subsection.7.2}{Incentives and Proof of work}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.3}{Miscellaneous}{section.7}% 34
+\BOOKMARK [1][-]{section.8}{Mechanics of Bitcoin}{}% 35
+\BOOKMARK [2][-]{subsection.8.1}{Bitcoin Transactions}{section.8}% 36
+\BOOKMARK [2][-]{subsection.8.2}{Bitcoin scripts}{section.8}% 37
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Pay-to-Public-Key-Hash}{subsection.8.2}% 38
+\BOOKMARK [3][-]{subsubsection.8.2.2}{Pay-to-Publiv-key}{subsection.8.2}% 39
+\BOOKMARK [3][-]{subsubsection.8.2.3}{Multi-Signature}{subsection.8.2}% 40
+\BOOKMARK [3][-]{subsubsection.8.2.4}{Data output/Proof of burn \(OP RETURN\)}{subsection.8.2}% 41
+\BOOKMARK [3][-]{subsubsection.8.2.5}{Pay-to-Script-Hash}{subsection.8.2}% 42
+\BOOKMARK [2][-]{subsection.8.3}{Application of Bitcoin scripts}{section.8}% 43
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Escrow Transactions}{subsection.8.3}% 44
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Micropayments}{subsection.8.3}% 45
+\BOOKMARK [3][-]{subsubsection.8.3.3}{Lock Time}{subsection.8.3}% 46
+\BOOKMARK [3][-]{subsubsection.8.3.4}{Smart Contracts}{subsection.8.3}% 47
+\BOOKMARK [2][-]{subsection.8.4}{Bitcoin Blocks}{section.8}% 48
+\BOOKMARK [2][-]{subsection.8.5}{Bitcoin Network}{section.8}% 49
+\BOOKMARK [3][-]{subsubsection.8.5.1}{Network Protocol}{subsection.8.5}% 50
+\BOOKMARK [3][-]{subsubsection.8.5.2}{SPV and Bloom Filters}{subsection.8.5}% 51
+\BOOKMARK [1][-]{section.9}{Storing and using Bitcoins}{}% 52
+\BOOKMARK [2][-]{subsection.9.1}{Transmitting Addresses}{section.9}% 53
+\BOOKMARK [2][-]{subsection.9.2}{Storing Bitcoins}{section.9}% 54
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Wallets}{subsection.9.2}% 55
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Hot and Cold Storage}{subsection.9.2}% 56
+\BOOKMARK [2][-]{subsection.9.3}{Splitting and Sharing Keys}{section.9}% 57
+\BOOKMARK [2][-]{subsection.9.4}{Online Wallets and Exchanges}{section.9}% 58
+\BOOKMARK [3][-]{subsubsection.9.4.1}{Exchanges}{subsection.9.4}% 59
+\BOOKMARK [1][-]{section.10}{Alternative mining puzzles}{}% 60
+\BOOKMARK [2][-]{subsection.10.1}{ASIC Resistant Puzzles}{section.10}% 61
+\BOOKMARK [3][-]{subsubsection.10.1.1}{Scrypt}{subsection.10.1}% 62
+\BOOKMARK [2][-]{subsection.10.2}{Proof of useful work}{section.10}% 63
+\BOOKMARK [3][-]{subsubsection.10.2.1}{Primecoin}{subsection.10.2}% 64
+\BOOKMARK [2][-]{subsection.10.3}{Proof of Stake and Virtual Mining}{section.10}% 65
+\BOOKMARK [3][-]{subsubsection.10.3.1}{Peercoin: Coin Age-Based Selection}{subsection.10.3}% 66
+\BOOKMARK [3][-]{subsubsection.10.3.2}{Tezos: Liquid Proof of Stake}{subsection.10.3}% 67
+\BOOKMARK [3][-]{subsubsection.10.3.3}{Algorand: Pure Proof of Stake}{subsection.10.3}% 68
+\BOOKMARK [1][-]{section.11}{Bitcoin as a Platform}{}% 69
+\BOOKMARK [2][-]{subsection.11.1}{Bitcoin as a Log}{section.11}% 70
+\BOOKMARK [2][-]{subsection.11.2}{Smart property}{section.11}% 71
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Colored Coins}{subsection.11.2}% 72
+\BOOKMARK [2][-]{subsection.11.3}{Lotteries}{section.11}% 73
+\BOOKMARK [3][-]{subsubsection.11.3.1}{Timed Commitment in Bitcoin}{subsection.11.3}% 74
+\BOOKMARK [1][-]{section.12}{Smart Contracts}{}% 75
+\BOOKMARK [2][-]{subsection.12.1}{Ethereum}{section.12}% 76
+\BOOKMARK [2][-]{subsection.12.2}{Tezos Smart Contracts}{section.12}% 77
+\BOOKMARK [3][-]{subsubsection.12.2.1}{Michelson Smart Contracts}{subsection.12.2}% 78
+\BOOKMARK [3][-]{subsubsection.12.2.2}{Michelson Example I: Hello World!}{subsection.12.2}% 79
+\BOOKMARK [3][-]{subsubsection.12.2.3}{Michelson Example II: \(Hello paramter!\)}{subsection.12.2}% 80
+\BOOKMARK [3][-]{subsubsection.12.2.4}{Michelson Example III: \(voting\)}{subsection.12.2}% 81
+\BOOKMARK [2][-]{subsection.12.3}{Reference Data on Michelson}{section.12}% 82
+\BOOKMARK [2][-]{subsection.12.4}{Unfamiliar Datatypes}{section.12}% 83
+\BOOKMARK [2][-]{subsection.12.5}{TRANSFER\137TOKENS}{section.12}% 84
+\BOOKMARK [2][-]{subsection.12.6}{SET\137DELEGATE}{section.12}% 85
+\BOOKMARK [2][-]{subsection.12.7}{CREATE\137CONTRACT}{section.12}% 86
+\BOOKMARK [1][-]{section.13}{Smart Contracts Security}{}% 87
+\BOOKMARK [2][-]{subsection.13.1}{DAO - Decentralized Autonomous Organization}{section.13}% 88
+\BOOKMARK [2][-]{subsection.13.2}{KotE - King of the Ether}{section.13}% 89
+\BOOKMARK [2][-]{subsection.13.3}{Parity Multisig Bug}{section.13}% 90

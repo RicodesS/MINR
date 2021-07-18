@@ -1,0 +1,91 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}Money}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Payment Systems}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Monetary unit}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Monetary equivalent}{4}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Fiat Money}{4}{subsubsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.4}Monetary Control Structures}{4}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Creation by Banks}{4}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Money representations}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Transaction processing}{5}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Basic Tools}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Blockchain}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Cryptographic Hash Functions}{6}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Find a collision}{6}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Hash from Compression}{6}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Properties and Applications}{7}{subsubsection.3.2.3}%
+\contentsline {section}{\numberline {4}Hash Data-Structures}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Hash Pointers}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Hashed Linked List/ Blockchain}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Merkle Tree}{8}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Cryptography and Digital Signatures}{10}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Public key cryptography}{10}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}RSA}{10}{subsubsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.2}Digital Signatures}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Identities}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Two Simple CryptoCurrencies}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Goofycoin}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Scroogecoin}{11}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Transactions}{12}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Properties}{12}{subsubsection.6.2.2}%
+\contentsline {section}{\numberline {7}Decentralization}{12}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Distributed Consensus}{12}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Incentives and Proof of work}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Miscellaneous}{13}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Mechanics of Bitcoin}{13}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Bitcoin Transactions}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Bitcoin scripts}{15}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Pay-to-Public-Key-Hash}{15}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Pay-to-Publiv-key}{15}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Multi-Signature}{16}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Data output/Proof of burn (OP RETURN)}{16}{subsubsection.8.2.4}%
+\contentsline {subsubsection}{\numberline {8.2.5}Pay-to-Script-Hash}{16}{subsubsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.3}Application of Bitcoin scripts}{16}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Escrow Transactions}{16}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Micropayments}{17}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Lock Time}{17}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Smart Contracts}{17}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}Bitcoin Blocks}{17}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Bitcoin Network}{17}{subsection.8.5}%
+\contentsline {subsubsection}{\numberline {8.5.1}Network Protocol}{18}{subsubsection.8.5.1}%
+\contentsline {subsubsection}{\numberline {8.5.2}SPV and Bloom Filters}{18}{subsubsection.8.5.2}%
+\contentsline {section}{\numberline {9}Storing and using Bitcoins}{19}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Transmitting Addresses}{19}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Storing Bitcoins}{20}{subsection.9.2}%
+\contentsline {subsubsection}{\numberline {9.2.1}Wallets}{20}{subsubsection.9.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2}Hot and Cold Storage}{21}{subsubsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.3}Splitting and Sharing Keys}{21}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Online Wallets and Exchanges}{22}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Exchanges}{22}{subsubsection.9.4.1}%
+\contentsline {section}{\numberline {10}Alternative mining puzzles}{22}{section.10}%
+\contentsline {subsection}{\numberline {10.1}ASIC Resistant Puzzles}{22}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Scrypt}{23}{subsubsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.2}Proof of useful work}{23}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Primecoin}{23}{subsubsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.3}Proof of Stake and Virtual Mining}{24}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Peercoin: Coin Age-Based Selection}{24}{subsubsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.2}Tezos: Liquid Proof of Stake}{24}{subsubsection.10.3.2}%
+\contentsline {subsubsection}{\numberline {10.3.3}Algorand: Pure Proof of Stake}{26}{subsubsection.10.3.3}%
+\contentsline {section}{\numberline {11}Bitcoin as a Platform}{27}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Bitcoin as a Log}{27}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Smart property}{27}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Colored Coins}{27}{subsubsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.3}Lotteries}{27}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Timed Commitment in Bitcoin}{28}{subsubsection.11.3.1}%
+\contentsline {section}{\numberline {12}Smart Contracts}{29}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Ethereum}{29}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Tezos Smart Contracts}{31}{subsection.12.2}%
+\contentsline {subsubsection}{\numberline {12.2.1}Michelson Smart Contracts}{32}{subsubsection.12.2.1}%
+\contentsline {subsubsection}{\numberline {12.2.2}Michelson Example I: Hello World!}{33}{subsubsection.12.2.2}%
+\contentsline {subsubsection}{\numberline {12.2.3}Michelson Example II: (Hello paramter!)}{34}{subsubsection.12.2.3}%
+\contentsline {subsubsection}{\numberline {12.2.4}Michelson Example III: (voting)}{34}{subsubsection.12.2.4}%
+\contentsline {subsection}{\numberline {12.3}Reference Data on Michelson}{35}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Unfamiliar Datatypes}{36}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}TRANSFER$\_$TOKENS}{37}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}SET$\_$DELEGATE}{38}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}CREATE$\_$CONTRACT}{38}{subsection.12.7}%
+\contentsline {section}{\numberline {13}Smart Contracts Security}{40}{section.13}%
+\contentsline {subsection}{\numberline {13.1}DAO - Decentralized Autonomous Organization}{40}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}KotE - King of the Ether}{41}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Parity Multisig Bug}{42}{subsection.13.3}%

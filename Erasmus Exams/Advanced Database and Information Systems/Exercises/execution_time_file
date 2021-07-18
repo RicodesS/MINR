@@ -1,0 +1,10 @@
+Loading of userRatingsRDD: --- 0.07008218765258789 seconds --- 
+Loading of paperTermsRDD: --- 0.07170915603637695 seconds --- 
+Preparation and joining of RDD: --- 0.20988202095031738 seconds --- 
+Save joined RDD in a file: --- 2588.0422370433807 seconds --- 
+Basic analysis over RDDs: --- 19.539863348007202 seconds --- 
+Loading of papers into DF: --- 4.068648815155029 seconds --- 
+Loading of papers terms into DF: --- 0.5101785659790039 seconds --- 
+Basic Analysis over DF: --- 10.097689390182495 seconds --- 
+Preparation and joining of DF: --- 3.4837465286254883 seconds --- 
+Saving the joined DFs: --- 217.69320845603943 seconds --- 

@@ -1,0 +1,152 @@
+EX1
+1.
+
+db.country2.aggregate(
+[
+  {$match:  {
+       population: {$gt: 10000000}, 
+       area: {$lt: 200000}
+            }
+
+  },
+  {$project: {
+       name: true,
+       population: true,
+       area: true
+              }
+
+  }
+]
+)
+
+-------------------------------------------------------------
+
+2. 
+
+
+db.country1.aggregate([
+      {$lookup:
+         {
+           from: "country1",
+           pipeline: [ { $match: { name: "Netherlands" } },   
+		              {  $project: {_id:0, area: 1}}],
+           as: "holidays"
+         }
+       },
+	{ $unwind : "$holidays" },
+	{$project:
+		{ name: 1,
+		aaa:  { $lt: [ "$area", "$holidays.area"]}}
+	},
+	{$match:
+		{ aaa:  true}
+	}
+])
+
+
+-------------------------------------------------------------
+
+3.
+
+db.country2.aggregate(
+[
+  {$match:  {
+       name: "Germany" 
+            }
+
+  },
+  {$unwind: "$border"
+  },
+{$project: {
+       p: "$population_growth",
+	  border: true              }
+
+  },
+{
+     $lookup:
+       {
+         from: "country2",
+         localField: "border.country",
+         foreignField: "carcode",
+         as: "border_countries"
+       }
+  },
+{ $unwind : "$border_countries" },
+{ 
+$project:
+		 
+        {
+		border: true,
+		p: true,
+		"border_countries.population_growth":true,
+            ppp: { $lte: [ "$border_countries.population_growth", "$p" ] },
+            _id: 0
+          }
+  },
+{ 
+$match:
+        {ppp: false}
+  }
+]
+)
+
+-------------------------------------------------------------
+
+4.
+
+db.country3.aggregate(
+[
+  { $unwind: {path: "$province",
+			preserveNullAndEmptyArrays: true
+			} 
+  },
+  { $unwind: {path: "$province.city",
+			preserveNullAndEmptyArrays: true
+			} 
+  },
+  { $unwind: {path: "$city",
+			preserveNullAndEmptyArrays: true
+			} 
+  },
+{
+	$match: {$or: [{ $and: [{"city.located_at.watertype": {$exists: true}}, 
+	    {"city.is_country_cap": {$exists: true}}]}
+,
+	{ $and: [{"province.city.located_at.watertype": {$exists: true}}, 
+				   {"province.city.is_state_cap": {$exists: true}}]}]}
+}
+]
+)
+
+----------------------------------------------------------
+
+EX2
+
+db.zipcodes.aggregate( [
+   { $group:
+      {
+        _id: { state: "$state", city: "$city" },
+        pop: { $sum: "$pop" }
+      }
+   },
+   { $group:
+      {
+        _id : "$_id.state",
+	pairs: { $push: { city: "$_id.city", population: "$pop"} },
+        biggestPop:   { $max: "$pop" },
+	smallestPop: {$min: "$pop"},
+	}
+   },
+   { $project: {
+	pairs: {
+	  $filter: {
+		input: "$pairs",
+		as: "pair",
+		cond: { $or: [ {$lte: ["$$pair.population", "$smallestPop"]} , {$gte: [ "$$pair.population", "$biggestPop"]}] }
+
+		   }
+		}
+	}
+   }
+] )
+

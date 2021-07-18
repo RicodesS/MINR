@@ -1,0 +1,99 @@
+\babel@toc {english}{}
+\contentsline {part}{I\hspace {1em}Computer Graphics}{5}{part.1}%
+\contentsline {section}{\numberline {1}Introduction Computer Graphics}{6}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Rendering aspects}{6}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Light}{6}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Ray Casting}{8}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Implicit surfaces}{8}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Parametric surfaces}{9}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Combined objects}{9}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Triangles}{10}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Axis-aligned boxes}{10}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Axis-Aligned Bounding Box (AABB)}{10}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Bounding Volume Hierarchies (BVH)}{10}{subsubsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.6}Iso-surfaces in grids}{11}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Shading}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Phong Illumination Model}{11}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Diffuse Reflection}{12}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Specular Reflection}{12}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Reflection from Ambient Illumination}{12}{subsubsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.2}Extensions}{12}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Shading Models}{13}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Well-knows Models}{13}{subsubsection.3.3.1}%
+\contentsline {section}{\numberline {4}Homogeneous Notation}{13}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Transformations}{14}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Translation}{14}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Rotation}{14}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Mirroring}{15}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Scale}{15}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Shear}{15}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}Planes and normals}{15}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Basis Transform}{15}{subsubsection.4.1.7}%
+\contentsline {section}{\numberline {5}Projection}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}2D projections}{16}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}3D projections}{17}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Projection Transform}{17}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Modelview Transformation}{17}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Projection Transformation}{18}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Perspective Projection Transformation}{18}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Orthographic Projection}{19}{subsubsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.4}Typical vertex transformations}{19}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Rasterization}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Rasterization-based rendering}{21}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}1. Vertex processing.}{21}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}2. Rasterization.}{22}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.3}3. Fragment processing.}{23}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.4}4. Fragment update}{24}{subsubsection.6.1.4}%
+\contentsline {section}{\numberline {7}Parametric Curves}{24}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Polynomial curves}{24}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Bézier Curves}{24}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Bernstein Polynomials - Matrix Notation}{25}{subsection.7.3}%
+\contentsline {subsubsection}{\numberline {7.3.1}Conversion from Canonical to Bézier}{26}{subsubsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.4}Curve subdivision}{26}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Differential Curves}{26}{section.8}%
+\contentsline {subsection}{\numberline {8.1}$C^k$ Continuity}{27}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Piecewise polynomial curves}{27}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Cubic Bézier Spline}{27}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Cubic Polynomial in Canonical Form}{27}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Cubic Hermite}{28}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Catmull-Rom Spline}{28}{subsubsection.8.2.4}%
+\contentsline {section}{\numberline {9}Particle Fluids}{28}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Particle simulation}{28}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Particle motion}{29}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Particle forces in a fluid}{29}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Smoothed Particle Hydrodynamics SPH}{29}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}SPH for particle fluids}{30}{subsection.9.5}%
+\contentsline {subsubsection}{\numberline {9.5.1}Density}{30}{subsubsection.9.5.1}%
+\contentsline {subsubsection}{\numberline {9.5.2}Pressure}{30}{subsubsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.6}Neighbor search}{30}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Boundary handling}{31}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Visualization}{31}{subsection.9.8}%
+\contentsline {subsubsection}{\numberline {9.8.1}ISO-surface reconstruction}{31}{subsubsection.9.8.1}%
+\contentsline {part}{II\hspace {1em}Image Processing}{32}{part.2}%
+\contentsline {section}{\numberline {10}Introduction and Image basics}{33}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Imaging model}{33}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Image representation}{33}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Quantization}{34}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Types of images}{34}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Noise, basic operations and filters}{35}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Gaussian filtering}{37}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Why to prefer Gaussian to box filter?}{37}{subsubsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.2}Box filter}{38}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Recursive filter}{38}{subsection.11.3}%
+\contentsline {section}{\numberline {12}Energy minimization}{39}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Convexity}{40}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Jacobi Method}{40}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Gauss-Seidel Method}{40}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Successive over-relaxation (SOR)}{41}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Conjugate gradient (CG)}{41}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Multigrid methods}{41}{subsection.12.6}%
+\contentsline {subsubsection}{\numberline {12.6.1}Unidirectional (cascadic)}{41}{subsubsection.12.6.1}%
+\contentsline {subsubsection}{\numberline {12.6.2}Correcting (bidirectional)}{41}{subsubsection.12.6.2}%
+\contentsline {subsubsection}{\numberline {12.6.3}Full multigrid}{42}{subsubsection.12.6.3}%
+\contentsline {section}{\numberline {13}Variational Methods}{42}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Discrete/Continuous energies}{42}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Consistency}{42}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Motion Estimation}{46}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Lucas-Kanade Method}{46}{subsection.14.1}%
+\contentsline {subsection}{\numberline {14.2}Horn-Schunck model}{47}{subsection.14.2}%
+\contentsline {section}{\numberline {15}}{49}{section.15}%

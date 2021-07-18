@@ -1,0 +1,21 @@
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> . 
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix myns: <http://my.local.namespace#> .
+
+_:P1 rdf:type myns:Person.
+_:P1 myns:name "Pete".
+_:P1 myns:age "17"^^xsd:integer.
+_:P1 myns:email "pete@abc.com".
+
+_:P2 rdf:type myns:Person.
+_:P2 myns:name "John".
+_:P2 myns:email "john@abc.com".
+
+_:P3 rdf:type myns:Person.
+_:P3 myns:name "Sue".
+_:P3 myns:age "21"^^xsd:integer.
+
+_:P1 myns:knows _:P2.
+_:P1 myns:knows _:P3.
+_:P2 myns:knows _:P1.
+_:P2 myns:knows _:P3.

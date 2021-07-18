@@ -1,0 +1,40 @@
+\BOOKMARK [1][-]{section.1}{Semi-structured Data models: XML, XPath, XRel}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{XML}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{XPath}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{XRel: How to store XML data physically}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{XQuery}{section.1}% 5
+\BOOKMARK [1][-]{section.2}{JSON and MONGODB}{}% 6
+\BOOKMARK [2][-]{subsection.2.1}{JSON \(JavaScript Object Notation\)}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.2}{MongoDB}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Graph Databases}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Querying}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Graph Database Query Languages}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Beyond Relatioknal Database Systems: Column, NoSQL, Graph-DB}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Column-Stores}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{NoSQL \(Not Only SQL\) Database System}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Distributed Processing with Computer Clusters}{}% 15
+\BOOKMARK [2][-]{subsection.5.1}{MapReduce}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.2}{Clusters}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Basic Components of a DFS: }{subsection.5.2}% 18
+\BOOKMARK [1][-]{section.6}{Spark}{}% 19
+\BOOKMARK [2][-]{subsection.6.1}{Transformations}{section.6}% 20
+\BOOKMARK [2][-]{subsection.6.2}{Actions}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.3}{Data storage}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.4}{Spark Streaming}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.5}{Dataframe in Spark}{section.6}% 24
+\BOOKMARK [3][-]{subsubsection.6.5.1}{Create Dataframe}{subsection.6.5}% 25
+\BOOKMARK [1][-]{section.7}{Graph Query Language Semantics}{}% 26
+\BOOKMARK [2][-]{subsection.7.1}{Conjuctive Queries}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.2}{Minimization of Conjunctive Queries}{section.7}% 28
+\BOOKMARK [1][-]{section.8}{Acyclic Conjuctive Queries}{}% 29
+\BOOKMARK [2][-]{subsection.8.1}{Finding Join Trees}{section.8}% 30
+\BOOKMARK [2][-]{subsection.8.2}{Deciding ACQs Efficiently \(Yannakakis\)}{section.8}% 31
+\BOOKMARK [2][-]{subsection.8.3}{Yannakakis Enumeration Algorithm: }{section.8}% 32
+\BOOKMARK [1][-]{section.9}{Datalog}{}% 33
+\BOOKMARK [2][-]{subsection.9.1}{Semantics}{section.9}% 34
+\BOOKMARK [3][-]{subsubsection.9.1.1}{Model-theoretic Semantics}{subsection.9.1}% 35
+\BOOKMARK [3][-]{subsubsection.9.1.2}{Fixpoint Semantics}{subsection.9.1}% 36
+\BOOKMARK [2][-]{subsection.9.2}{Datalog}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.3}{Stratified Datalog}{section.9}% 38
+\BOOKMARK [3][-]{subsubsection.9.3.1}{Limitations of the Stratified Semantics}{subsection.9.3}% 39
+\BOOKMARK [2][-]{subsection.9.4}{Stable Models}{section.9}% 40

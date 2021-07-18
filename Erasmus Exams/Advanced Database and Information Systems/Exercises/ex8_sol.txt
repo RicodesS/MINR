@@ -1,0 +1,75 @@
+1.
+a)
+
+ans(C) returns customer name
+q1: ans|C
+	Meier
+	Smith
+b)
+
+q2: ans|S		 P
+	Authohaus Klein  Audi A8
+
+c)
+
+P2 is independent from the other subgoals.
+
+q2: ans|S		 P
+	Authohaus Klein  Audi A8
+
+d)
+q4: ans(C1,C2) <- Cust(C1,Freiburg), Cust(C2,Freiburg), Sales (P1,S1,C1), Sales (P2,S2,C2), Supp(S1,X), Supp(S2,X)
+
+Supplier name has to be from the same city
+ans|C1		C2
+    Meier	Meier
+    Meier	Smith
+    Smith	Meier
+    Smith	Smith
+    
+    
+2. Containment
+a) 
+q1: ans(X,Y) <- R(X,Z), R(Z,T), S(T,Y) und q1': ans(X,Z) <- R(X,X), S(X,Z)
+Counterexample R(1,2),R(2,3),S(3,4) 
+
+b)
+S(Y',Z') is redundant because it is not relevant to the head
+
+c)
+ans(4,3) XYZUV -> 12345
+	 R(4,5),R(1,2),S(2,3),S(5,1)=I
+	 
+3.
+a)
+
+X->X
+Y->Y
+Z->X
+
+R(X,Y,X),S(Y,X) \SUBSETEQ q1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
