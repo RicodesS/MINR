@@ -1,6 +1,12 @@
 GEM
-  remote: https://rubygems.org/
   remote: https://rails-assets.org/
+  specs:
+    rails-assets-es6-promise (4.2.4)
+    rails-assets-sweetalert2 (5.1.1)
+      rails-assets-es6-promise
+
+GEM
+  remote: https://rubygems.org/
   specs:
     actioncable (6.0.2.2)
       actionpack (= 6.0.2.2)
@@ -127,7 +133,7 @@ GEM
       rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    hashie (4.1.0)
+    hashie (5.0.0)
     http (4.3.0)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -186,13 +192,16 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.9)
       mini_portile2 (~> 2.4.0)
-    oauth (0.5.4)
-    omniauth (1.9.1)
+    oauth (0.6.2)
+      snaky_hash (~> 2.0)
+      version_gem (~> 1.1)
+    omniauth (2.1.0)
       hashie (>= 3.4.6)
-      rack (>= 1.6.2, < 3)
-    omniauth-oauth (1.1.0)
+      rack (>= 2.2.3)
+      rack-protection
+    omniauth-oauth (1.2.0)
       oauth
-      omniauth (~> 1.0)
+      omniauth (>= 1.0, < 3)
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
@@ -201,7 +210,9 @@ GEM
     public_suffix (4.0.3)
     puma (4.3.3)
       nio4r (~> 2.0)
-    rack (2.2.2)
+    rack (2.2.4)
+    rack-protection (2.2.2)
+      rack
     rack-proxy (0.6.5)
       rack
     rack-test (1.1.0)
@@ -221,9 +232,6 @@ GEM
       bundler (>= 1.3.0)
       railties (= 6.0.2.2)
       sprockets-rails (>= 2.0.0)
-    rails-assets-es6-promise (4.2.4)
-    rails-assets-sweetalert2 (5.1.1)
-      rails-assets-es6-promise
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
@@ -262,6 +270,9 @@ GEM
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     simple_oauth (0.3.1)
+    snaky_hash (2.0.0)
+      hashie
+      version_gem (~> 1.1)
     songkickr (0.5.5)
       httparty (>= 0.5.0)
     spring (2.1.0)
@@ -301,6 +312,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.6)
+    version_gem (1.1.0)
     warden (1.2.8)
       rack (>= 2.0.6)
     web-console (4.0.1)
