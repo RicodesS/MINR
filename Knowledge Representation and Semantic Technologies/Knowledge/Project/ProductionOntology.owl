@@ -1,0 +1,3110 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/riccardosalvalaggio/ontologies/2022/7/ProductionOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/riccardosalvalaggio/ontologies/2022/7/ProductionOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/riccardosalvalaggio/ontologies/2022/7/ProductionOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This is an ontology about a tipical International Production company that produce inshore and offshore simple devices composed of case and mechanics.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefinitelyWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomainThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engineer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinalStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fixture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HumanResources"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InShoreSupplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndefinitelyWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InitialStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InternalSite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JuniorWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LineSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Machine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mechanics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OffShoreSupplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Operation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProductionWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeniorWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Site"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Supplier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValuePartition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Worker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkerType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#IsInSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LeadsSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MakeDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Owns"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProducesCase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProducesDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProducesFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TakesMeasures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#WorksInModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#WorksInSite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#doOperations"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#doStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFixtures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMechanics"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSteps"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isManagerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ContractLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Located"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ProductionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SerialNumber"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#WorksForYears"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ann"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assembling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bob"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Business"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalibrationTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CheckFunctionalities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Default"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dimensions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElectricityTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EndingTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engineering"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fail"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fixture1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fixture2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fixture3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Frank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FunctionalTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#John"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Logistic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MadridSite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mike"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MilanSite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nick"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OutputCurrent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OutputVoltage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Production"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RigidityMachine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RigidityTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RomeSite"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rose"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Security"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SerialNumberGeneration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#calibrate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#checkRigidity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#checkcurrentsecurity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fullwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#serialnumber_generation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#to_Assemble"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0001"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0002"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0003"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0004"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0010"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0020"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0030"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0040"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0106"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0107"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0200"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#0400"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#DefinitelyWorker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#WorkerType"/>
+            <DataMinCardinality cardinality="12">
+                <DataProperty IRI="#ContractLength"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataMinCardinality>
+            <DataMaxCardinality cardinality="100">
+                <DataProperty IRI="#ContractLength"/>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Engineer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#WorksInModule"/>
+                <NamedIndividual IRI="#Engineering"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HumanResources"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#WorksInModule"/>
+                <NamedIndividual IRI="#HR"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InShoreSupplier"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Supplier"/>
+            <DataHasValue>
+                <DataProperty IRI="#Located"/>
+                <Literal>Italy</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#IndefinitelyWorker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#WorkerType"/>
+            <DataHasValue>
+                <DataProperty IRI="#ContractLength"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Intern"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#WorkerType"/>
+            <DataHasValue>
+                <DataProperty IRI="#ContractLength"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#JuniorWorker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <DataMaxCardinality cardinality="5">
+                <DataProperty IRI="#WorksForYears"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#LineSupervisor"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ProductionWorker"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#isSupervisorOf"/>
+                <Class IRI="#Worker"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#isResponsibleOf"/>
+                <Class IRI="#ProductionLine"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Manager"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#isManagerOf"/>
+                <Class IRI="#Worker"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#OffShoreSupplier"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Supplier"/>
+            <ObjectUnionOf>
+                <DataHasValue>
+                    <DataProperty IRI="#Located"/>
+                    <Literal>China</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#Located"/>
+                    <Literal>Germany</Literal>
+                </DataHasValue>
+                <DataHasValue>
+                    <DataProperty IRI="#Located"/>
+                    <Literal>Spain</Literal>
+                </DataHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProductionWorker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#WorksInModule"/>
+                <NamedIndividual IRI="#Production"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SeniorWorker"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Worker"/>
+            <DataMinCardinality cardinality="6">
+                <DataProperty IRI="#WorksForYears"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WorkerType"/>
+        <ObjectUnionOf>
+            <Class IRI="#DefinitelyWorker"/>
+            <Class IRI="#IndefinitelyWorker"/>
+            <Class IRI="#Intern"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Case"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefinitelyWorker"/>
+        <Class IRI="#WorkerType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCase"/>
+            <Class IRI="#Case"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMechanics"/>
+            <Class IRI="#Mechanics"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExternalSite"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinalStep"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fixture"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HumanResources"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InShoreSupplier"/>
+        <Class IRI="#Supplier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndefinitelyWorker"/>
+        <Class IRI="#WorkerType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InitialStep"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intern"/>
+        <Class IRI="#WorkerType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InternalSite"/>
+        <Class IRI="#Site"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JuniorWorker"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LineSupervisor"/>
+        <Class IRI="#ProductionWorker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#doOperations"/>
+            <Class IRI="#Operation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFixtures"/>
+            <Class IRI="#Fixture"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#ProducesFor"/>
+            <Class IRI="#ProductionLine"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Machine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isLocatedIn"/>
+            <Class IRI="#Site"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Intern"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mechanics"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OffShoreSupplier"/>
+        <Class IRI="#Supplier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Operation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#TakesMeasures"/>
+            <Class IRI="#Measure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLine"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionLine"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSteps"/>
+            <Class IRI="#Step"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProductionWorker"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Result"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeniorWorker"/>
+        <Class IRI="#Worker"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Site"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Step"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Supplier"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <Class IRI="#DomainThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Worker"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#WorksInModule"/>
+            <Class IRI="#Module"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorkerType"/>
+        <Class IRI="#ValuePartition"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DefinitelyWorker"/>
+        <Class IRI="#IndefinitelyWorker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DefinitelyWorker"/>
+        <Class IRI="#Intern"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Engineer"/>
+        <Class IRI="#HumanResources"/>
+        <Class IRI="#ProductionWorker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ExternalSite"/>
+        <Class IRI="#InternalSite"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IndefinitelyWorker"/>
+        <Class IRI="#Intern"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JuniorWorker"/>
+        <Class IRI="#Manager"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#JuniorWorker"/>
+        <Class IRI="#SeniorWorker"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Manager"/>
+        <Class IRI="#ProductionWorker"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#HumanResources"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IndefinitelyWorker"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorWorker"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InitialStep"/>
+        <NamedIndividual IRI="#Assembling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalSite"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionLine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IndefinitelyWorker"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorWorker"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intern"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorWorker"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionWorker"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Business"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#CheckFunctionalities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OffShoreSupplier"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supplier"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fixture"/>
+        <NamedIndividual IRI="#Default"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measure"/>
+        <NamedIndividual IRI="#Dimensions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#ElectricityTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FinalStep"/>
+        <NamedIndividual IRI="#EndingTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#EndingTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Engineering"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fixture"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fixture"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Fixture"/>
+        <NamedIndividual IRI="#Fixture3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DefinitelyWorker"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LineSupervisor"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionWorker"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorWorker"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Result"/>
+        <NamedIndividual IRI="#Good"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#HR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intern"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorWorker"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionWorker"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DefinitelyWorker"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LineSupervisor"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProductionWorker"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorWorker"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IndefinitelyWorker"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Manager"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SeniorWorker"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#John"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Logistic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalSite"/>
+        <NamedIndividual IRI="#MadridSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#MadridSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engineer"/>
+        <NamedIndividual IRI="#Mike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IndefinitelyWorker"/>
+        <NamedIndividual IRI="#Mike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorWorker"/>
+        <NamedIndividual IRI="#Mike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Mike"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternalSite"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InShoreSupplier"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supplier"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Engineer"/>
+        <NamedIndividual IRI="#Nick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#IndefinitelyWorker"/>
+        <NamedIndividual IRI="#Nick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorWorker"/>
+        <NamedIndividual IRI="#Nick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Nick"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measure"/>
+        <NamedIndividual IRI="#OutputCurrent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Measure"/>
+        <NamedIndividual IRI="#OutputVoltage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Production"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Machine"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#RigidityTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InternalSite"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Site"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#DefinitelyWorker"/>
+        <NamedIndividual IRI="#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HumanResources"/>
+        <NamedIndividual IRI="#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#JuniorWorker"/>
+        <NamedIndividual IRI="#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Worker"/>
+        <NamedIndividual IRI="#Rose"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Security"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Step"/>
+        <NamedIndividual IRI="#SerialNumberGeneration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OffShoreSupplier"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supplier"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#InShoreSupplier"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Supplier"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#calibrate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#checkRigidity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#checkcurrentsecurity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#fullwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#serialnumber_generation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Operation"/>
+        <NamedIndividual IRI="#to_Assemble"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#0001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#0002"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#0003"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Case"/>
+        <NamedIndividual IRI="#0004"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mechanics"/>
+        <NamedIndividual IRI="#0010"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mechanics"/>
+        <NamedIndividual IRI="#0020"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mechanics"/>
+        <NamedIndividual IRI="#0030"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mechanics"/>
+        <NamedIndividual IRI="#0040"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0106"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0107"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0200"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0300"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Device"/>
+        <NamedIndividual IRI="#0400"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#HR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#Frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#Joe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#Ann"/>
+        <NamedIndividual IRI="#Nick"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#Assembling"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#Assembling"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+        <NamedIndividual IRI="#to_Assemble"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+        <NamedIndividual IRI="#Assembling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+        <NamedIndividual IRI="#Default"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#Assembling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#ElectricityTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#EndingTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#RigidityTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSteps"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+        <NamedIndividual IRI="#SerialNumberGeneration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadsSite"/>
+        <NamedIndividual IRI="#Bill"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Bill"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#Bill"/>
+        <NamedIndividual IRI="#John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#Production"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Business"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+        <NamedIndividual IRI="#calibrate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+        <NamedIndividual IRI="#Default"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CalibrationMachine"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+        <NamedIndividual IRI="#calibrate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+        <NamedIndividual IRI="#Default"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+        <NamedIndividual IRI="#MadridSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#CalibrationTest"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <NamedIndividual IRI="#0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <NamedIndividual IRI="#0200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <NamedIndividual IRI="#0020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <NamedIndividual IRI="#0030"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#serialnumber_generation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#SerialNumberGeneration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#serialnumber_generation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#SerialNumberGeneration"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+        <NamedIndividual IRI="#MadridSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+        <NamedIndividual IRI="#checkcurrentsecurity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+        <NamedIndividual IRI="#ElectricityTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+        <NamedIndividual IRI="#Default"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#ElectricityTest"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#ElectricityTest"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#fullwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#EndingTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#fullwork"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#EndingTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#EndingTest"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#EndingTest"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Engineering"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Production"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <NamedIndividual IRI="#Frank"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#CheckFunctionalities"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#Fixture1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#Fixture2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#Fixture3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#FunctionalMachine"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#FunctionalTest"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#HR"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#Production"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Jack"/>
+        <NamedIndividual IRI="#John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Production"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <NamedIndividual IRI="#Joe"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#LeadsSite"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#Bill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#Jack"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <NamedIndividual IRI="#John"/>
+        <NamedIndividual IRI="#Mike"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Logistic"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#MadridSite"/>
+        <NamedIndividual IRI="#CalibrationMachine2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#MadridSite"/>
+        <NamedIndividual IRI="#CodesAssignerMachine2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Mike"/>
+        <NamedIndividual IRI="#Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Mike"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Mike"/>
+        <NamedIndividual IRI="#John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#MilanSite"/>
+        <NamedIndividual IRI="#CodesAssignerMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#MilanSite"/>
+        <NamedIndividual IRI="#EndOfLineMachine2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+        <NamedIndividual IRI="#0200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+        <NamedIndividual IRI="#0030"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Nick"/>
+        <NamedIndividual IRI="#Engineering"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Nick"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Nick"/>
+        <NamedIndividual IRI="#Ann"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Production"/>
+        <NamedIndividual IRI="#BerlinSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Production"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Production"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+        <NamedIndividual IRI="#BestProductionLine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doOperations"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+        <NamedIndividual IRI="#checkRigidity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#doStep"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+        <NamedIndividual IRI="#RigidityTest"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+        <NamedIndividual IRI="#Default"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <NamedIndividual IRI="#RigidityMachine"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#RigidityTest"/>
+        <NamedIndividual IRI="#Fail"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasResult"/>
+        <NamedIndividual IRI="#RigidityTest"/>
+        <NamedIndividual IRI="#Good"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#RomeSite"/>
+        <NamedIndividual IRI="#AssemblingMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#RomeSite"/>
+        <NamedIndividual IRI="#ElectricityMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Owns"/>
+        <NamedIndividual IRI="#RomeSite"/>
+        <NamedIndividual IRI="#EndOfLineMachine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <NamedIndividual IRI="#Rose"/>
+        <NamedIndividual IRI="#HR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <NamedIndividual IRI="#Rose"/>
+        <NamedIndividual IRI="#MilanSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <NamedIndividual IRI="#Rose"/>
+        <NamedIndividual IRI="#John"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#IsInSite"/>
+        <NamedIndividual IRI="#Security"/>
+        <NamedIndividual IRI="#RomeSite"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+        <NamedIndividual IRI="#0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+        <NamedIndividual IRI="#0004"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+        <NamedIndividual IRI="#0040"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+        <NamedIndividual IRI="#0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+        <NamedIndividual IRI="#0100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0001"/>
+        <NamedIndividual IRI="#0100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0002"/>
+        <NamedIndividual IRI="#0200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0003"/>
+        <NamedIndividual IRI="#0300"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0004"/>
+        <NamedIndividual IRI="#0400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0010"/>
+        <NamedIndividual IRI="#0100"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0020"/>
+        <NamedIndividual IRI="#0200"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0030"/>
+        <NamedIndividual IRI="#0300"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <NamedIndividual IRI="#0040"/>
+        <NamedIndividual IRI="#0400"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0100"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0100"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0101"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0101"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0102"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0102"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0103"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0103"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0104"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0104"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0105"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0105"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0106"/>
+        <NamedIndividual IRI="#0001"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0106"/>
+        <NamedIndividual IRI="#0010"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0200"/>
+        <NamedIndividual IRI="#0002"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0200"/>
+        <NamedIndividual IRI="#0020"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0300"/>
+        <NamedIndividual IRI="#0003"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0300"/>
+        <NamedIndividual IRI="#0030"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCase"/>
+        <NamedIndividual IRI="#0400"/>
+        <NamedIndividual IRI="#0004"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <NamedIndividual IRI="#0400"/>
+        <NamedIndividual IRI="#0040"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Ann"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Ann"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Bill"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Bill"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Bob"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Bob"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Located"/>
+        <NamedIndividual IRI="#ChineseSupplier"/>
+        <Literal>China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">80</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Frank"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Jack"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Jack"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Joe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Joe"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#John"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#John"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Mike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Mike"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Located"/>
+        <NamedIndividual IRI="#NaplesSupplier"/>
+        <Literal>Italy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Nick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Nick"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ContractLength"/>
+        <NamedIndividual IRI="#Rose"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">36</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#WorksForYears"/>
+        <NamedIndividual IRI="#Rose"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Located"/>
+        <NamedIndividual IRI="#SpanishSupplier"/>
+        <Literal>Spain</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Located"/>
+        <NamedIndividual IRI="#VeniceSupplier"/>
+        <Literal>Italy</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0100"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0100"/>
+        <Literal>11111111</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0101"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0101"/>
+        <Literal>12549863</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0102"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T09:10:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0102"/>
+        <Literal>12759830</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0103"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T09:25:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0103"/>
+        <Literal>79845031</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0104"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T09:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0104"/>
+        <Literal>68461211</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0105"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0105"/>
+        <Literal>79513245</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0106"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-12T10:30:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0200"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-09T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0200"/>
+        <Literal>15684952</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0300"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-12T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0300"/>
+        <Literal>785168943</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ProductionDate"/>
+        <NamedIndividual IRI="#0400"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-08-26T09:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SerialNumber"/>
+        <NamedIndividual IRI="#0400"/>
+        <Literal>46468120</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#IsInSite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#LeadsSite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Owns"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#TakesMeasures"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#doOperations"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#doStep"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCase"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasResult"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSteps"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Owns"/>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <ObjectProperty IRI="#isManagerOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#LeadsSite"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#MakeDevice"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#ProducesFor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#WorksInModule"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#WorksInSite"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#doOperations"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#doStep"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCase"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMechanics"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasResult"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#Owns"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSteps"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isManagerOf"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#IsInSite"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#LeadsSite"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#MakeDevice"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#Owns"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ProducesCase"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ProducesDevice"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ProducesFor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#TakesMeasures"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#WorksInModule"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#WorksInSite"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#doOperations"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#doStep"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCase"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasFixtures"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasMechanics"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasResult"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSteps"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isManagerOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </AsymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#IsInSite"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#LeadsSite"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#MakeDevice"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#Owns"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ProducesCase"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ProducesDevice"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ProducesFor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#TakesMeasures"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#WorksInModule"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#WorksInSite"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#doOperations"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#doStep"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCase"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasFixtures"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasMechanics"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasResult"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isLocatedIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isManagedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isManagerOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#IsInSite"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LeadsSite"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <Class IRI="#Case"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <Class IRI="#Mechanics"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Owns"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <Class IRI="#Supplier"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TakesMeasures"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <Class IRI="#Worker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <Class IRI="#Worker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#doOperations"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#doStep"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCase"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResult"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSteps"/>
+        <Class IRI="#ProductionLine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#Worker"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <Class IRI="#LineSupervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#LineSupervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#IsInSite"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LeadsSite"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#MakeDevice"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Owns"/>
+        <Class IRI="#Machine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProducesCase"/>
+        <Class IRI="#Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProducesDevice"/>
+        <Class IRI="#Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProducesFor"/>
+        <Class IRI="#ProductionLine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ProducesMechanics"/>
+        <Class IRI="#Mechanics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TakesMeasures"/>
+        <Class IRI="#Measure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#WorksInModule"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#WorksInSite"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#doOperations"/>
+        <Class IRI="#Operation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#doStep"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCase"/>
+        <Class IRI="#Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFixtures"/>
+        <Class IRI="#Fixture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMechanics"/>
+        <Class IRI="#Mechanics"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResult"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSteps"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocatedIn"/>
+        <Class IRI="#Site"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagedBy"/>
+        <Class IRI="#Manager"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isManagerOf"/>
+        <Class IRI="#Worker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isResponsibleOf"/>
+        <Class IRI="#ProductionWorker"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#ProductionLine"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ContractLength"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Located"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ProductionDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SerialNumber"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#WorksForYears"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ContractLength"/>
+        <Class IRI="#WorkerType"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Located"/>
+        <Class IRI="#Supplier"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ProductionDate"/>
+        <Class IRI="#Device"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SerialNumber"/>
+        <Class IRI="#Device"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#WorksForYears"/>
+        <Class IRI="#Worker"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ContractLength"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Located"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ProductionDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SerialNumber"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#WorksForYears"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Case</IRI>
+        <Literal>The external part of a produced Device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ContractLength</IRI>
+        <Literal>Length of contract of a worker (6:intern, 1000:fulltime, else parttime)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Device</IRI>
+        <Literal>What the industry produces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Fixture</IRI>
+        <Literal>Machines&apos; base of working.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsInSite</IRI>
+        <Literal>A module is phisically located in a Site</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LeadsSite</IRI>
+        <Literal>Every site has a leader who is a Manager.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Located</IRI>
+        <Literal>Every supplier is located in a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Machine</IRI>
+        <Literal>Production machines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measure</IRI>
+        <Literal>Every machine takes some measures of operations done.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mechanics</IRI>
+        <Literal>Internal part of a Device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Module</IRI>
+        <Literal>Physical module of a site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Operation</IRI>
+        <Literal>Every machine do some operations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Owns</IRI>
+        <Literal>Every site owns (as asset) one or more machines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProducesCase</IRI>
+        <Literal>A Supplier can produce some cases.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProducesDevice</IRI>
+        <Literal>A supplier can produce some Devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProducesFor</IRI>
+        <Literal>A Machine produces devices for a Production Line.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProducesMechanics</IRI>
+        <Literal>A Supplier can produce some Mechanics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProductionDate</IRI>
+        <Literal>Every device has a specific moment in which it has been produced</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ProductionLine</IRI>
+        <Literal>Logical production line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SerialNumber</IRI>
+        <Literal>Every device has a unique serialnumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Site</IRI>
+        <Literal>Physical production site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Step</IRI>
+        <Literal>Unit of a production Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Supplier</IRI>
+        <Literal>External Physical supplier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TakesMeasures</IRI>
+        <Literal>Every operation save some measure about the device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Worker</IRI>
+        <Literal>Physical People working for the company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WorksForYears</IRI>
+        <Literal>How may years a Worker has been working for the company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WorksInModule</IRI>
+        <Literal>Every worker wose in a specific module.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WorksInSite</IRI>
+        <Literal>A worker works in a specific site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doOperations</IRI>
+        <Literal>A machine, during a production step, does one or more operation on the udergoing device.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#doStep</IRI>
+        <Literal>A machine does one step of the production process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCase</IRI>
+        <Literal>A device is composed of a base and some internal mechanics, so has a base.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasFixtures</IRI>
+        <Literal>A machine has one or more fixtures on which can test devices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMechanics</IRI>
+        <Literal>A device is composed of a base and some internal mechanics, so has mechanics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasResult</IRI>
+        <Literal>A step can have different result (good, fault etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSteps</IRI>
+        <Literal>A production line has one or more steps, needed to provide all the tests and procedures to put the device on commerce.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isLocatedIn</IRI>
+        <Literal>A machine is phisically located in a production site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagedBy</IRI>
+        <Literal>A worker is managed by a Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isManagerOf</IRI>
+        <Literal>A Manager manages some workers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isResponsibleOf</IRI>
+        <Literal>A LineSupervisor (a worker) is responsible of Productionworkers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSupervisorOf</IRI>
+        <Literal>A LineSupervisor is Supervisor of a Line</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
